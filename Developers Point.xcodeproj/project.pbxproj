@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		170BA0FB216607BA00A50EC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170BA0FA216607BA00A50EC1 /* AppDelegate.swift */; };
-		170BA0FD216607BA00A50EC1 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170BA0FC216607BA00A50EC1 /* FirstViewController.swift */; };
-		170BA0FF216607BA00A50EC1 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170BA0FE216607BA00A50EC1 /* SecondViewController.swift */; };
+		170BA0FD216607BA00A50EC1 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170BA0FC216607BA00A50EC1 /* FeedVC.swift */; };
+		170BA0FF216607BA00A50EC1 /* GroupsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170BA0FE216607BA00A50EC1 /* GroupsVC.swift */; };
 		170BA102216607BA00A50EC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 170BA100216607BA00A50EC1 /* Main.storyboard */; };
 		170BA107216607BD00A50EC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 170BA105216607BD00A50EC1 /* LaunchScreen.storyboard */; };
 		170BA11621660B6400A50EC1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 170BA11521660B6400A50EC1 /* GoogleService-Info.plist */; };
@@ -28,8 +28,8 @@
 		1006B1118562E404CA9B8D4D /* Pods_Developers_Point.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Developers_Point.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		170BA0F7216607BA00A50EC1 /* Developers Point.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Developers Point.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		170BA0FA216607BA00A50EC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		170BA0FC216607BA00A50EC1 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		170BA0FE216607BA00A50EC1 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		170BA0FC216607BA00A50EC1 /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		170BA0FE216607BA00A50EC1 /* GroupsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsVC.swift; sourceTree = "<group>"; };
 		170BA101216607BA00A50EC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		170BA106216607BD00A50EC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		170BA108216607BD00A50EC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -95,8 +95,8 @@
 		170BA10E216609EB00A50EC1 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				170BA0FC216607BA00A50EC1 /* FirstViewController.swift */,
-				170BA0FE216607BA00A50EC1 /* SecondViewController.swift */,
+				170BA0FC216607BA00A50EC1 /* FeedVC.swift */,
+				170BA0FE216607BA00A50EC1 /* GroupsVC.swift */,
 				170BA11D2166229500A50EC1 /* AuthVC.swift */,
 				170BA11F216622AB00A50EC1 /* LoginVC.swift */,
 			);
@@ -295,10 +295,10 @@
 				170BA11A21660FB700A50EC1 /* Constants.swift in Sources */,
 				170BA120216622AB00A50EC1 /* LoginVC.swift in Sources */,
 				170BA1222166236200A50EC1 /* InsetTextField.swift in Sources */,
-				170BA0FF216607BA00A50EC1 /* SecondViewController.swift in Sources */,
+				170BA0FF216607BA00A50EC1 /* GroupsVC.swift in Sources */,
 				170BA0FB216607BA00A50EC1 /* AppDelegate.swift in Sources */,
 				170BA12621663BF400A50EC1 /* AuthService.swift in Sources */,
-				170BA0FD216607BA00A50EC1 /* FirstViewController.swift in Sources */,
+				170BA0FD216607BA00A50EC1 /* FeedVC.swift in Sources */,
 				170BA11821660EBB00A50EC1 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

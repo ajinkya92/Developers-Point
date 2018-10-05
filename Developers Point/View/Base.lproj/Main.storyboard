@@ -12,7 +12,7 @@
         <!--First-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="Developers_Point" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9pv-A4-QxB" customClass="FeedVC" customModule="Developers_Point" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -49,7 +49,7 @@
         <!--Second-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="Developers_Point" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8rJ-Kc-sve" customClass="GroupsVC" customModule="Developers_Point" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -116,17 +116,23 @@
                                                 <rect key="frame" x="0.0" y="45" width="303" height="56.5"/>
                                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
-                                                <state key="normal" title="Login with Facebook">
+                                                <state key="normal" title="Sign in with Facebook">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="signinWithFacebookButtonTapped:" destination="kg6-4s-I3d" eventType="touchUpInside" id="51I-bI-EZw"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GEv-0K-345">
                                                 <rect key="frame" x="0.0" y="109.5" width="303" height="56"/>
                                                 <color key="backgroundColor" red="0.80784313725490198" green="0.32941176470588235" blue="0.23921568627450979" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
-                                                <state key="normal" title="Login with Google">
+                                                <state key="normal" title="Sign in with Google">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="signinWithGoogleButtonTapped:" destination="kg6-4s-I3d" eventType="touchUpInside" id="cLs-yU-Ou5"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AKI-h6-Glk">
                                                 <rect key="frame" x="0.0" y="173.5" width="303" height="55.5"/>
@@ -142,9 +148,12 @@
                                             <constraint firstAttribute="height" constant="40" id="rVw-gk-m4Y"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <state key="normal" title=" Login with Email" image="emailIcon">
+                                        <state key="normal" title=" Sign in with Email" image="emailIcon">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="signinWithEmailButtonTapped:" destination="kg6-4s-I3d" eventType="touchUpInside" id="aa3-6e-49N"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.25490196079999999" green="0.27058823529999998" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -195,6 +204,9 @@
                                     <constraint firstAttribute="width" constant="30" id="VXp-VL-8E1"/>
                                 </constraints>
                                 <state key="normal" image="close"/>
+                                <connections>
+                                    <action selector="cancelButtonTapped:" destination="Agn-Xy-rSQ" eventType="touchUpInside" id="18p-Et-mCT"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QRN-WQ-1yL">
                                 <rect key="frame" x="147.5" y="259" width="80" height="33"/>
@@ -205,6 +217,9 @@
                                 <state key="normal" title="SIGN IN">
                                     <color key="titleColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="signInButtonTapped:" destination="Agn-Xy-rSQ" eventType="touchUpInside" id="7iX-N6-cfv"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="vFc-5v-tOh">
                                 <rect key="frame" x="20" y="78" width="335" height="161"/>
@@ -250,6 +265,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="igQ-Kj-gnU"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="4Yg-2Z-EnK" id="Uj6-t1-G55"/>
+                        <outlet property="passwordTextField" destination="F3d-gg-PI3" id="wVB-nf-ya2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zdt-ce-fvt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -281,4 +300,5 @@
         <image name="loginBGImage" width="375" height="284"/>
         <image name="second" width="30" height="30"/>
     </resources>
+    <color key="tintColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
