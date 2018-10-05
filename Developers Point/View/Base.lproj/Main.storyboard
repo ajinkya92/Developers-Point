@@ -232,6 +232,68 @@
             </objects>
             <point key="canvasLocation" x="1400.8" y="-663.41829085457277"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="5PF-S9-yqL">
+            <objects>
+                <viewController id="TJh-8F-XuK" sceneMemberID="viewController">
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="ZkN-Gc-enn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SU6-49-fLv">
+                                <rect key="frame" x="0.0" y="20" width="375" height="70"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fzk-B2-c3F">
+                                        <rect key="frame" x="295" y="30" width="60" height="37"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="AtQ-i4-KNZ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="18"/>
+                                        <state key="normal" title="DONE"/>
+                                        <connections>
+                                            <action selector="signOutButtonTapped:" destination="w4c-Yp-Evk" eventType="touchUpInside" id="2es-q4-K7A"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_New Group" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UAa-39-Vds">
+                                        <rect key="frame" x="133.5" y="38" width="108.5" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="FGd-eG-HRo"/>
+                                            <constraint firstAttribute="width" constant="108.5" id="swk-uw-M8h"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="18"/>
+                                        <color key="textColor" red="0.56078431370000004" green="0.81176470590000005" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Kh-Kl-H7z">
+                                        <rect key="frame" x="20" y="37.5" width="21" height="22"/>
+                                        <state key="normal" image="close"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="9Kh-Kl-H7z" firstAttribute="leading" secondItem="SU6-49-fLv" secondAttribute="leading" constant="20" id="0Ll-qP-NtN"/>
+                                    <constraint firstItem="9Kh-Kl-H7z" firstAttribute="centerY" secondItem="UAa-39-Vds" secondAttribute="centerY" id="130-Ce-XgL"/>
+                                    <constraint firstAttribute="height" constant="70" id="8R8-bN-czd"/>
+                                    <constraint firstItem="UAa-39-Vds" firstAttribute="centerY" secondItem="Fzk-B2-c3F" secondAttribute="centerY" id="JBN-sb-i0x"/>
+                                    <constraint firstItem="UAa-39-Vds" firstAttribute="centerX" secondItem="SU6-49-fLv" secondAttribute="centerX" id="c3d-bF-OL3"/>
+                                    <constraint firstItem="Fzk-B2-c3F" firstAttribute="top" secondItem="SU6-49-fLv" secondAttribute="top" constant="30" id="lKf-1P-Rxr"/>
+                                    <constraint firstAttribute="trailing" secondItem="Fzk-B2-c3F" secondAttribute="trailing" constant="20" id="vig-j9-vL9"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.16078431369999999" green="0.16862745100000001" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="SU6-49-fLv" firstAttribute="top" secondItem="sSD-ce-OVf" secondAttribute="top" id="i4A-AX-YaM"/>
+                            <constraint firstAttribute="trailing" secondItem="SU6-49-fLv" secondAttribute="trailing" id="iHB-Kj-bUU"/>
+                            <constraint firstItem="SU6-49-fLv" firstAttribute="leading" secondItem="ZkN-Gc-enn" secondAttribute="leading" id="tY3-bz-WFw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sSD-ce-OVf"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eKt-35-Er9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1401" y="688"/>
+        </scene>
         <!--ME-->
         <scene sceneID="J7M-bk-Q8G">
             <objects>

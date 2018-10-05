@@ -25,7 +25,7 @@ class FeedVC: UIViewController {
         super.viewDidAppear(animated)
         DataService.instance.getAllMessages { (returnedMessagesArray) in
             
-            self.messageArray = returnedMessagesArray
+            self.messageArray = returnedMessagesArray.reversed() //This reverses the recent post on the top
             self.tableView.reloadData()
         }
     }
@@ -51,7 +51,10 @@ extension FeedVC: UITableViewDelegate, UITableViewDataSource {
         
         let message = messageArray[indexPath.row]
         
-        cell.configureCell(profileImage: image!, email: message.senderId, context: message.content)
+        DataService.instance.getUsername(forUid: message.senderId) { (returnedUsername) in
+            
+            cell.configureCell(profileImage: image!, email: returnedUsername, context: message.content)
+        }
         
         return cell
         

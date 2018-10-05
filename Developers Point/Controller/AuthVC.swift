@@ -7,12 +7,24 @@
 //
 
 import UIKit
+import Firebase
 
 class AuthVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        // It there is a User it should dismiss and logout when the user has signed out
+        
+        if Auth.auth().currentUser != nil {
+            dismiss(animated: true, completion: nil)
+        }
         
     }
     

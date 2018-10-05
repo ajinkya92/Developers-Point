@@ -18,3 +18,5 @@ typealias loginCompleteHandler = (_ status: Bool, _ error: Error?)->()
 typealias postSomethingCompleteHandler = (_ status: Bool)-> ()
 
 typealias getAllFeedMessagesCompletionHandler = (_ message: [Message]) -> ()
+
+typealias uidToUsernameCompletionHandler = (_ username: String)-> ()
