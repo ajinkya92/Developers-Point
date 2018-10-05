@@ -14,3 +14,7 @@ let DB_BASE = Database.database().reference()
 typealias userCreationCompleteHandler = (_ status: Bool, _ error: Error?)->()
 
 typealias loginCompleteHandler = (_ status: Bool, _ error: Error?)->()
+
+typealias postSomethingCompleteHandler = (_ status: Bool)-> ()
+
+typealias getAllFeedMessagesCompletionHandler = (_ message: [Message]) -> ()
