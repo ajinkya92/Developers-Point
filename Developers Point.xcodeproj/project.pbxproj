@@ -21,6 +21,7 @@
 		170BA1222166236200A50EC1 /* InsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170BA1212166236200A50EC1 /* InsetTextField.swift */; };
 		170BA12421662CD500A50EC1 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170BA12321662CD500A50EC1 /* ShadowView.swift */; };
 		170BA12621663BF400A50EC1 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170BA12521663BF400A50EC1 /* AuthService.swift */; };
+		170BA1282167958F00A50EC1 /* MeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170BA1272167958F00A50EC1 /* MeVC.swift */; };
 		DBE1BD0ACBD29D5AF9B9D075 /* Pods_Developers_Point.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1006B1118562E404CA9B8D4D /* Pods_Developers_Point.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +43,7 @@
 		170BA1212166236200A50EC1 /* InsetTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetTextField.swift; sourceTree = "<group>"; };
 		170BA12321662CD500A50EC1 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		170BA12521663BF400A50EC1 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		170BA1272167958F00A50EC1 /* MeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeVC.swift; sourceTree = "<group>"; };
 		1CFE31483277774755B99CF8 /* Pods-Developers Point.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Developers Point.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Developers Point/Pods-Developers Point.debug.xcconfig"; sourceTree = "<group>"; };
 		3C6F35E25168D5589C929D72 /* Pods-Developers Point.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Developers Point.release.xcconfig"; path = "Pods/Target Support Files/Pods-Developers Point/Pods-Developers Point.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -99,6 +101,7 @@
 				170BA0FE216607BA00A50EC1 /* GroupsVC.swift */,
 				170BA11D2166229500A50EC1 /* AuthVC.swift */,
 				170BA11F216622AB00A50EC1 /* LoginVC.swift */,
+				170BA1272167958F00A50EC1 /* MeVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -297,6 +300,7 @@
 				170BA1222166236200A50EC1 /* InsetTextField.swift in Sources */,
 				170BA0FF216607BA00A50EC1 /* GroupsVC.swift in Sources */,
 				170BA0FB216607BA00A50EC1 /* AppDelegate.swift in Sources */,
+				170BA1282167958F00A50EC1 /* MeVC.swift in Sources */,
 				170BA12621663BF400A50EC1 /* AuthService.swift in Sources */,
 				170BA0FD216607BA00A50EC1 /* FeedVC.swift in Sources */,
 				170BA11821660EBB00A50EC1 /* DataService.swift in Sources */,
